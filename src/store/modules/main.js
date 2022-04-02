@@ -29,10 +29,8 @@ const actions = {
   },
   getData: ({ commit }, { success, fail, payload } = {}) => {
     api.getData((response) => {
-      console.log('response', response)
       const transformedData = response.body.results?.map(data => {
         const fullName = `${data?.name?.first} ${data?.name?.last}`
-        console.log('data', data.gender)
         return {
           username: data?.login?.username,
           name: fullName,
@@ -41,7 +39,6 @@ const actions = {
           registeredDate: data?.registered?.date
         }
       })
-      console.log('transformed', transformedData)
       commit('setTableData', transformedData)
       success && success(response)
     }, fail, payload)

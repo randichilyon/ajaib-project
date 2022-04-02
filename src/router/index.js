@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+
+const DataTablePage = () => import(/* webpackChunkName: "p-data-table-page" */ '@/components/DataTablePage')
 
 Vue.use(VueRouter)
 
@@ -8,7 +9,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HelloWorld
+    component: DataTablePage
   }
 ]
 
