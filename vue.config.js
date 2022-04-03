@@ -13,5 +13,7 @@ module.exports = defineConfig({
       }
     }
   },
-  publicPath: '/ajaib-project/'
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/ajaib-project/'
+    : '/'
 })
