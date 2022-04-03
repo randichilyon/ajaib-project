@@ -41,6 +41,11 @@ npm run lint
 * I'm using Vuex as the state management
 * Unit test implemented using jest
 
+## Implemented methodology for better performance
+* Component chunk import
+* Debounce implementation instead of using lodash
+* Using date-fns instead of moment (less package size)
+
 ## Collaborators
 - Randi Chilyon Alfianto (https://www.linkedin.com/in/randichilyon/)
 
