@@ -12,5 +12,6 @@ module.exports = defineConfig({
         '@': resolve('src')
       }
     }
-  }
+  },
+  publicPath: '/ajaib-project/'
 })
