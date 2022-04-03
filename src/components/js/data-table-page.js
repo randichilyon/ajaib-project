@@ -65,7 +65,7 @@ export default {
     searchRequest () {
       return {
         keyword: this.keyword,
-        gender: this.genderFilter !== 'All' ? this.genderFilter : '',
+        gender: this.genderFilter !== 'All' ? this.genderFilter?.toLowerCase() : '',
         sortBy: this.sortBy,
         sortOrder: this.sortOrder,
         page: this.page,
