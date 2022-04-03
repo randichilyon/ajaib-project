@@ -13,7 +13,7 @@ module.exports = defineConfig({
       }
     }
   },
-  publicPath: '/ajaib-project/',
+  publicPath: '/',
   pages: {
     index: {
       // entry for the page
@@ -28,7 +28,7 @@ module.exports = defineConfig({
       // chunks to include on this page, by default includes
       // extracted common chunks and vendor chunks.
       chunks: ['chunk-vendors', 'chunk-common', 'index'],
-      publicPath: '/ajaib-project/'
+      publicPath: '/'
     }
   }
 })

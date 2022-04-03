@@ -14,6 +14,7 @@
     "core-js": "^3.8.3",
     "date-fns": "^2.9.0",
     "date-fns-tz": "^1.0.10",
+    "gh-pages": "^3.2.3",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
     "vuetify": "^2.6.4",
