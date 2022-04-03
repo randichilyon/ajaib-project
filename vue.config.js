@@ -13,15 +13,13 @@ module.exports = defineConfig({
       }
     }
   },
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/ajaib-project/'
-    : '/',
+  publicPath: '/ajaib-project/',
   pages: {
     index: {
       // entry for the page
       entry: 'src/main.js',
       // the source template
-      template: 'index.html',
+      template: 'public/index.html',
       // output as dist/index.html
       filename: 'index.html',
       // when using title option,
