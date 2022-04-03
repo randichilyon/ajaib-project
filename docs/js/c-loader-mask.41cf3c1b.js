@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkajaib_project"]=self["webpackChunkajaib_project"]||[]).push([[660],{1752:function(e,t,a){a.r(t),a.d(t,{default:function(){return i}});var n=function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)},r=[function(){var e=this,t=e.$createElement,a=e._self._c||t;return a("div",{staticClass:"mask"},[a("div",{staticClass:"loader"})])}],s={name:"LoaderMask"},c=s,l=a(1001),u=(0,l.Z)(c,n,r,!1,null,"771e0d8c",null),i=u.exports}}]);
-//# sourceMappingURL=c-loader-mask.41cf3c1b.js.map
