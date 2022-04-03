@@ -13,7 +13,9 @@ module.exports = defineConfig({
       }
     }
   },
-  publicPath: '/',
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/ajaib-project/'
+    : '/',
   pages: {
     index: {
       // entry for the page
@@ -27,8 +29,7 @@ module.exports = defineConfig({
       title: 'Ajaib Project',
       // chunks to include on this page, by default includes
       // extracted common chunks and vendor chunks.
-      chunks: ['chunk-vendors', 'chunk-common', 'index'],
-      publicPath: '/'
+      chunks: ['chunk-vendors', 'chunk-common', 'index']
     }
   }
 })
