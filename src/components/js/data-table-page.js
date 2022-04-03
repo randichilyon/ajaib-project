@@ -60,7 +60,8 @@ export default {
       return this.tableData.slice(startIdx, startIdx + 5)
     },
     paginationLength () {
-      return this.tableData.length / 5
+      let calculate = Math.ceil(this.tableData.length / 5)
+      return calculate < 1 ? 1 : calculate
     },
     searchRequest () {
       return {
@@ -120,7 +121,9 @@ export default {
       return 'mdi-sort-alphabetical-variant'
     },
     format (date) {
-      return formatDate(date)
+      return formatDate({
+        value: date
+      })
     }
   },
   watch: {

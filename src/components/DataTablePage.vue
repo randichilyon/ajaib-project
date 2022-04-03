@@ -70,7 +70,7 @@
             <td>{{ item.name }}</td>
             <td>{{ item.email }}</td>
             <td>{{ item.gender }}</td>
-            <td>{{ format({value: item.registeredDate}) }}</td>
+            <td>{{ format(item.registeredDate) }}</td>
           </tr>
           </tbody>
         </template>
